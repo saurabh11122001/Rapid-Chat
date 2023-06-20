@@ -1,0 +1,42 @@
+.chat-message{
+    display: flex;
+    margin: 15px 30px 15px 30px;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    max-width: 300px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-radius: 10%;
+    color: aliceblue;
+    height: fit-content;
+}
+
+.chat-message-date-time{
+    display: flex;
+    align-self: flex-end;
+    font-weight: normal;
+    align-items: center;
+    font-size: 13px;
+}
+.chat-message-date-time{
+    margin-left: 20px;
+}
+.double-tick{
+    width:20px;
+    height:20px;
+    /* background-color: white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+.double-tick img{
+    width:100% ;
+    height: 100%;
+    color: white;
+}
+.date-time{
+    display: flex;
+    gap:5px;
+}

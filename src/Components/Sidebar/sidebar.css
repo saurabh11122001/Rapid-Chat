@@ -1,0 +1,207 @@
+.sidebar{
+    min-width:300px;
+    width:30%;
+    border-right: 1px solid lightgrey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #fafafa;
+}
+
+.sidebar-header{
+    height: 50px;
+    padding: 5px 0px 5px 10px;
+    background-color:#f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    font-size: 23px;
+}
+.sidebar-header-img{
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.sidebar-header-img img{
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+.sidebar-header p{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
+.sidebar-header-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 120px;
+    color: black;
+    cursor: pointer;
+}
+.app-name{
+    color: blueviolet;
+    font-weight: 700;
+
+}
+
+.contacts-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+    height:20px;
+    margin-bottom: 2px;
+}
+.title{
+    color: black;
+    font-weight:600;
+    border-bottom: 3px solid blueviolet;
+}
+.sidebar-search{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f6f6f6;
+}
+.sidebar-search .icon{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.sidebar-input-search{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.sidebar-input-search input{
+   background: transparent;
+   border: none;
+   outline: none;
+   margin: 0 0 2px 6px;
+   width: 80%;
+   font-size: 20px;
+    
+}
+.sidebar-chat-list{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+
+
+.more-opt-sidebar{
+    display: flex;
+    position: absolute;
+    background-color: #d7dbd6;
+    height: 140px;
+    width: 80px;
+    left: 210px;
+    top:40px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.remove{
+    display: none;
+}
+
+.list-items{
+    font-size: 12px;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+}
+.list-items li{
+padding: 5px;
+transition: background-color 0.3s;
+border-radius: 10px;
+}
+
+@media screen and (min-width:1300px) {
+    .more-opt-sidebar{
+        position: absolute;
+        background-color: #d7dbd6;
+        height: 140px;
+        width: 80px;
+        left: 300px;
+        top:40px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+}
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to control the transparency */
+    backdrop-filter: blur(5px); /* Adjust the blur value (5px) to control the level of blur */
+    -webkit-backdrop-filter: blur(5px); /* For Safari */
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:  10 ease; /* Added animation property */
+    animation: fadeIn 2s ease; /* Added animation property */
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.remove{
+    display: none;
+}
+.img-div {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    height:250px;
+    width: 250px;
+    border-radius: 50%;
+  }
+  .img-div img{
+    height: 100%;
+    border-radius: 100%;
+    width: 100%;
+    background: yellowgreen;
+  }
+  .img-container .icon{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+.img-container .icon:hover{
+    font-size: 30px;
+}
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.copyright p{
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}

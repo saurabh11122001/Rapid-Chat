@@ -1,0 +1,23 @@
+1.npx create-react-app chat-rapid --->in Powershell Window to Create React App Folder
+2.firebase firebase.google.com
+3.Context
+4.Component Folder
+	Home Chatpage Sidebar Chatcontainer Chatmessage Profilepage ShowProfile
+
+5.npm i react-icons for Icons
+
+before and after in css?
+
+emoji picker react
+class .emoji-picker-react
+function onEmojiClick........ onEmojiClick={(Emoji)=>{
+                        setMessage(msg+Emoji.emoji);
+                    }}
+npm i firebase@8
+
+firebase permission denied
+allow read, write: if request.auth != null; rules..in database
+
+"start": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build", mapping error
+    and nmp install cross-env in dev dependencies
