@@ -105,7 +105,7 @@
     position: absolute;
     background-color: #d7dbd6;
     height: 140px;
-    width: 80px;
+    width: 70px;
     left: 210px;
     top:40px;
     border-radius: 10px;
@@ -121,6 +121,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     list-style: none;
 }
@@ -128,9 +129,26 @@
 padding: 5px;
 transition: background-color 0.3s;
 border-radius: 10px;
+margin: 0 0 0 3px;
+}
+.smile{
+    display: none;
+}
+.setting{
+    display: none;
 }
 
 @media screen and (min-width:1300px) {
+    .setting{
+        display: block;
+    }
+    .smile{
+        display: block;
+    }
+    .threedot{
+        display: none;
+    }
+    
     .more-opt-sidebar{
         position: absolute;
         background-color: #d7dbd6;
@@ -155,10 +173,32 @@ border-radius: 10px;
     z-index: 9999;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     animation:  10 ease; /* Added animation property */
     animation: fadeIn 2s ease; /* Added animation property */
 }
+.user-email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: white; */
+    position: relative;
+    bottom: 15%;
+    height: 30px;
+    border-radius: 5px;
+    width: 90%;
+    background: transparent;
+    border: 1px solid white;
+    color:white;
+    font-weight: 500;
+    animation:fadeIn 1.5s ease;
+    &:hover{
+        font-size: large;
+        cursor: pointer;
+    }
+}
+
 @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -204,4 +244,35 @@ border-radius: 10px;
     color: black;
     font-weight: 500;
     font-size: 12px;
+}
+
+.logout-op{
+    position: absolute;
+    background: #ededed;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    padding: 5px;
+    height: 25px;
+    left:80%;
+    top:40px;
+    border-radius: 5px 0 5px 5px;
+    cursor: pointer;
+    &:hover{
+        background: white;
+        color:black;
+    }
+}
+
+.logout-op p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:450px) {
+ .sidebar{
+    width: 100%;
+ }
+    
 }

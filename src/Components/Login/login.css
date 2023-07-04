@@ -6,6 +6,7 @@
     position: relative;
     z-index: 100;
     overflow: hidden;
+    animation: fadeIn 3s ease;
 }
 .login::before{
     width: 100vw;
@@ -29,6 +30,14 @@
     z-index: 100;
     animation: anime 1s linear infinite;
 } 
+@media screen and (max-width:450px) {
+    .login-container{
+    width: 300px;
+    height: 400px;
+    }
+
+
+}
 
 
 .login-logo{
@@ -65,3 +74,11 @@
 .login-btn:hover{
     background-color: #005541;
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

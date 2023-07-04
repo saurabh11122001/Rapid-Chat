@@ -2,9 +2,10 @@
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid lightgrey;
+    
     cursor: pointer;
     color: black;
+    
 }
 .user-profile:hover{
     background: lightgoldenrodyellow;

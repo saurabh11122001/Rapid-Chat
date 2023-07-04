@@ -21,3 +21,33 @@ allow read, write: if request.auth != null; rules..in database
 "start": "cross-env GENERATE_SOURCEMAP=false react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build", mapping error
     and nmp install cross-env in dev dependencies
+import sound from '../../Sounds/sendTone.mp3'
+
+
+const audio= new Audio(sound); 
+
+const audioPlay=()=>{
+    audio.play()
+}
+
+
+    const fileInputRef = useRef(null);
+    const handleIconClick = () => {
+        fileInputRef.current.click();
+        setFade(false);
+        setIndex('');
+        setOpenFile(!openFile);
+    }
+    const handleFileSelect=(event)=>{
+        const file=event.target.files[0];
+        setImage(file);
+        setImageSelect(true);
+    }
+    Screenshot..
+    1.Login
+    2.Home
+    3.Sender
+    4.Receiver
+    5.Avataar 
+    6.Logout
+    7.Emoji

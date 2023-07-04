@@ -3,7 +3,16 @@
     flex:1;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
+@media screen and (max-width:450px) {
+    .chat-container{
+        position: absolute;
+       height: 99vh;
+    }
+} 
+    
+
 .chat-container-header{
     display: flex;
     align-items: center;
@@ -37,13 +46,40 @@
 }
 .chat-container-header-icon{
     margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.call-icons{
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    width: 100px;
+}
+.icon-call{
+    font-size: 25px;
+    color: blue;
+    &:hover{
+        font-size: 28px;
+    }
+}
+.icon-video{
+    font-size: 25px;
+    color: blue;
+    &:hover{
+        font-size: 28px;
+    }
 }
 .chat-display-container{
     flex:1;
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
-    background-color: #ece5dd;
+    background-image: url('../../Assests/bg2.jpg');
+    background-size:cover ;
 }
 .chat-input{
     display: flex;
@@ -154,3 +190,235 @@ li:hover{
       opacity: 1;
     }
   }
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+}
+
+ .icon-delete{
+   height: 20px;
+   width: 25px;
+   &:hover{
+    height: 40px;
+   }
+}
+ .icon-dots{
+   height: 20px;
+   width: 25px;
+   &:hover{
+    height: 40px;
+   }
+}
+.mic-div{
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:40%;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    left:58%;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: #eee7e7;
+    animation: fadeIn 3s ease;
+}
+@media screen and (max-width:450px) {
+    .mic-div{
+        left:26%;
+    }
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bigMic{
+    background: blueviolet;
+    height: 120px;
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 50%;
+    animation: beat 2s infinite;
+}
+@keyframes beat {
+    0% {
+      transform: scale(1) translateY(0);
+    }
+    25% {
+      transform: scale(1) translateY(10px);
+    }
+    100% {
+      transform: scale(1) translateY(0);
+    }
+  }
+  
+.icon-mic{
+   color: white;
+    height: 80%;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
+.cancleMic{
+    background: rgb(160, 27, 27);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    font-weight: 500;
+    border-radius: 10px;
+    &:hover{
+        background: red;
+    }
+}
+.attachfile-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    position: relative;
+    bottom:1%;
+    width: 90%;
+    height: 50%;
+    border:2px solid black;
+    margin: auto;
+    border-radius: 50px 50px 50px 0 ;
+    animation: fadeIn 3s ease;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.all-img-container{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    background-color: none;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+.choose-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    height: 100px;
+    width: 100px;
+    margin: 10px 0 0 10px;
+}
+.choose-img img{
+    border-radius: 10px;
+    margin: auto;
+    height: 90%;
+    width: 90%;
+}
+
+.proPage{
+    background:#ededed;
+    position: absolute;
+    top: 38px;
+    left:35%;
+    width: 40%;
+    height: 53%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.proInfo{
+    width: 90%;
+    margin:10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.proImg {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 50%;
+    background: green;
+}
+.proImg img{
+    border-radius: 50%;
+    background: green;
+    width: 100%;
+    height: 100%;
+}
+.proName{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 500;
+}
+.proEmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 5px;
+    border-bottom: 2px solid grey;
+}
+.proEmail h3{
+   color: gray;
+   text-transform: lowercase;
+}
+.proEmail p{
+   color: black;
+}
+.block-report{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+.block-report .pblock{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    color: rgb(155, 44, 44);
+    font-weight: 400;
+    border-radius: 5px;
+    &:hover{
+        color: red;
+        font-weight: 500;
+    }
+}

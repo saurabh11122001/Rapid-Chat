@@ -51,4 +51,13 @@
     }
     
 }
+@media screen and (max-width:450px) {
+   
+    .home-bg {
+        display: none;
+    }
+        
+    
+    
+}
 

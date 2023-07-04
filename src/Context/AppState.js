@@ -40,6 +40,20 @@ const [newAvtaar, setNewAvtaar] = useState('');
 const [currentUserPhoto, setCurrentUserPhoto] = useState(false);
 const [confirm, setConfirm] = useState(false);
 const [avtaarFriends, setAvtaarFriends] = useState('');
+const [messageId, setMessageId] = useState('');
+const [clickChat, setClickChat] = useState(false);
+const [copyText, setCopyText] = useState('');
+const [messageIcon, setMessageIcon] = useState(false);
+const [sounds, setSound] = useState(false);
+const [clickUser, setClickUser] = useState(false);
+const [lastMessage, setLastMessage] = useState('');
+const [tryy, setTryy] = useState(false);
+const [isSend, setIsSend] = useState(false);
+const [image, setImage] = useState('');
+const [imageSelect, setImageSelect] = useState(false);
+const [mobileSize, setMobileSize] = useState(false);
+const [profileDisplay, setProfileDisplay] = useState(false);
+const [logout,setLogout]=useState(false);
 
 
 
@@ -62,7 +76,10 @@ const [avtaarFriends, setAvtaarFriends] = useState('');
           recent,setRecent,searchTitle,setSearchTitle,
           selectPhoto,setSelectPhoto,avtaar,setAvtaar,isAvtaar,setIsAvtaar,
           newAvtaar, setNewAvtaar,currentUserPhoto, setCurrentUserPhoto,confirm, setConfirm,
-          avtaarFriends, setAvtaarFriends
+          avtaarFriends, setAvtaarFriends,messageId, setMessageId,clickChat, setClickChat,copyText, setCopyText,
+          messageIcon, setMessageIcon,sounds,setSound,clickUser, setClickUser,lastMessage,setLastMessage,tryy, setTryy,isSend,setIsSend,
+          image, setImage,imageSelect, setImageSelect,mobileSize, setMobileSize,profileDisplay, setProfileDisplay,
+          logout,setLogout
           }}>
           {props.children}
         </AppContext.Provider>

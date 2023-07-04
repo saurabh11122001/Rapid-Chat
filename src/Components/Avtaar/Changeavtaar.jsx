@@ -80,11 +80,11 @@ const Changeavtaar = (props) => {
     <>
       <div className="avtaar-container">
         <div className="avtaar-header">
-          <p>Avtaar</p>
+          <p>Avatar</p>
         </div>
           <div className="choose-avtaar">
           <div className="select-avtaar">
-          <p>Select Avtaar</p>
+          <p>Select Avatar</p>
           </div>
           <div className="all-avatars">
            {avtaars.map((avtr, index) => (

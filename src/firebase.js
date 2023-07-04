@@ -2,18 +2,18 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBEnBrSOkuFC-5GJnC-EVfYuEsAHJBE_eY",
-    authDomain: "chat-rapid-e5301.firebaseapp.com",
-    projectId: "chat-rapid-e5301",
-    storageBucket: "chat-rapid-e5301.appspot.com",
-    messagingSenderId: "827292244635",
-    appId: "1:827292244635:web:307e64e223c1c24760843e",
-    measurementId: "G-6Y4HVBJ9ZG"
-  };
+  apiKey: "AIzaSyDe7EFZEMqXMNkSC3R5E0fP-nlGJTi2ufk",
+  authDomain: "chat-rapid-3d7f3.firebaseapp.com",
+  projectId: "chat-rapid-3d7f3",
+  storageBucket: "chat-rapid-3d7f3.appspot.com",
+  messagingSenderId: "915306185397",
+  appId: "1:915306185397:web:4cee2652cec28e0773b4fc",
+  measurementId: "G-N70QKXXH6S"
+};
   const app=firebase.initializeApp(firebaseConfig);
 
 //   for authentication
-
+// const firestore=firebase.firestore();
 const auth=firebase.auth();
 const db=app.firestore();
 
