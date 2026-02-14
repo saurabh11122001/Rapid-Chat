@@ -2,13 +2,13 @@
 import firebase from "firebase";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDe7EFZEMqXMNkSC3R5E0fP-nlGJTi2ufk",
-  authDomain: "chat-rapid-3d7f3.firebaseapp.com",
-  projectId: "chat-rapid-3d7f3",
-  storageBucket: "chat-rapid-3d7f3.appspot.com",
-  messagingSenderId: "915306185397",
-  appId: "1:915306185397:web:4cee2652cec28e0773b4fc",
-  measurementId: "G-N70QKXXH6S"
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
   const app=firebase.initializeApp(firebaseConfig);
 
